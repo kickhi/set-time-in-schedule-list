@@ -1,0 +1,16 @@
+input, textarea {
+    display: block;
+    margin: 2px;
+}
+
+#regex{
+    width: 80vw;
+}
+#test_text{
+    width: 80vw;
+    min-height: 10vh;
+}
+#result_text{
+    width: 50vw;
+    min-height: 10vh;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option</title>
+    <link rel="stylesheet" href="options.css">
+    <script src="options.js"></script>
+</head>
+
+<body>
+    <h1>
+        オプションページ
+    </h1>
+    <h3>
+        正規表現マッチングパターン
+    </h3>
+    <h5>
+        例：(?&lt;gp_dd&gt;[0-9]{1,2}/[0-9]{1,2})[^0-9]*(?&lt;stime&gt;[0-9:]*)〜(?&lt;etime&gt;[0-9:]*) <br>
+        ※ 日付は先頭になるようにしてください
+    </h5>
+    <input type="input" id="regex">
+    <input type="button" id="ok" value="保存">
+    <br>
+    <h3>
+        テスト
+    </h3>
+    <h4>
+        読込テキスト
+    </h4>
+    <h5>
+        例：<br>
+        04/01 勤務時間 9:30〜19:15<br>
+        04/02 勤務時間 9:30〜19:15<br>
+        04/03 勤務時間 9:30〜19:15<br>
+    </h5>
+    <textarea id="test_text" cols="30" rows="10"></textarea>
+    <input type="button" id="test" value="テスト">
+    <h4>
+        読取結果
+    </h4>
+    <textarea id="result_text" cols="30" rows="10"></textarea>
+
+</body>
+
+</html>
